@@ -1,0 +1,37 @@
+/* MyProfileを四角でかこむ */
+.myprofile {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+}
+
+/* ナビゲーションメニューを横並びにする */
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+/* nav2(about と works) を横並びにする */
+.nav2 {
+  display: flex;
+  gap: 20px
+}
+
+/* Aboutを中央に配置 */
+.about {
+  text-align: center;
+}
+/* yokobaoとnameを横並びにする */
+.jikosyoukai {
+  display: flex;
+  gap: 20px
+}
+
+/* Workを中央に配置 */
+.works {
+  text-align: center;
+}
+/* sakuhinを横並びにする */
+.sakuhin {
+  display: flex;
+  gap: 15px
+}

@@ -5,52 +5,70 @@
   <title>MyProfile</title>
 
   <link rel="stylesheet" href="style.css">
+  <!-- slickの読み込み -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
 <body>
   <!-- ナビゲーションメニュー -->
   <header>
-    <nav>
-      <div>
-        <title>MyProfile</title>
+    <nav class="nav">
+      <div class="nav1">
+        <h1 class="myprofile">MyProfile</h1>
       </div>
-      <div>
-        <menu>About</menu>
-        <menu>Works</menu>
+      <div class="nav2">
+        <h1 class="about">About</h1>
+        <h1 class="works">Works</h1>
       </div>
     </nav>
   </header>
   <main>
     <article>
-      <!-- メイン画像 -->
-      <div>
-        <img src="">
-      </div>
+      <!-- メインビジュアル カルーセル-->
+      <section id="main-carausel">
+        <div class="carausel">
+          <div>
+            <img class="carauselImg" src="image/main1.png">
+          </div>
+          <div>
+            <img class="carauselImg" src="image/main2.png">
+          </div>
+          <div>
+            <img class="carauselImg" src="image/main3.png">
+          </div>
+        </div>
+      </section>
+      
 
       <!-- About -->
-      <h1>About</h1>
-      <section>
-        <h3>Kazuki Asahina</h3>
-        <ul>
-          <li>25歳 長野県佐久市出身</li>
-          <li>ソフトウェア業界でマーケティングに従事</li>
-          <li>趣味はカメラ、愛機はCanon</li>
-          <li>自然を撮影するのが好きで、海や山によく行く</li>
-        </ul>
-      </section>
-
-      <!-- Works -->
-      <h1>Works</h1>
-      <section>
+      <h1 class="about">About</h1>
+      <div class="jikosyoukai">
         <div>
-          <img src="">
+          <img class="yokogao" src="image/about.png">
+        </div>
+        <section class="name">
+          <h3>Kazuki Asahina</h3>
+          <ul>
+            <li>25歳 長野県佐久市出身</li>
+            <li>ソフトウェア業界でマーケティングに従事</li>
+            <li>趣味はカメラ、愛機はCanon</li>
+            <li>自然を撮影するのが好きで、海や山によく行く</li>
+          </ul>
+        </section>
+      </div>
+      <!-- Works -->
+      <h1 class="works">Works</h1>
+      <section class="sakuhin">
+        <div>
+          <img src="image/works1.png">
           <p>新潟に訪れた際に、日本海の雄大さを魅了されて撮影した1枚</p>
         </div>
         <div>
-          <img src="">
+          <img src="image/works2.png">
           <p>地元長野の木曽町から撮影した、冠雪した御嶽山</p>
         </div>
         <div>
-          <img src="">
+          <img src="image/main3.png">
           <p>京都で撮影した明け方の古き良き日本の街並み</p>
         </div>
       </section>
@@ -60,5 +78,8 @@
   <footer>
 
   </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
