@@ -30,6 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 /* Aboutを中央に配置 */
@@ -39,20 +40,30 @@
 /* yokogaoとnameを横並びにする */
 .jikosyoukai {
   display: flex;
-  gap: 20px
+  align-items: center;
+  justify-content: center;
+  gap: 50px
 }
+
+/* Worksを中央に配置 */
+.works {
+  text-align: center;
+}
+
 
 /* workの画像のリサイズ */
 .work {
   width: 179px;
   height: 134px;
 }
-/* Workを中央に配置 */
-.works {
-  text-align: center;
+
+/* work-sakuhinをflexcontainerにして子要素を横並びにする */
+.works-sakuhin {
+  width: 573px;
+  height: 329px;
 }
-/* sakuhinを横並びにする */
 .sakuhin {
   display: flex;
-  gap: 15px
+  justify-content: center;
+  align-items: center;
 }
