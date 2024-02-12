@@ -1,31 +1,52 @@
 /* MyProfileを四角でかこむ */
 .myprofile {
   border: 1px solid black;
-  padding: 10px;
+  padding: 3px;
   background-color: white;
 }
 
 /* ナビゲーションメニューを横並びにする */
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 46px;
+  gap: 200px;
 }
+
 /* nav2(about と works) を横並びにする */
 .nav2 {
   display: flex;
   gap: 20px
 }
 
+/* メインビジュアルの画像のリサイズ */
+.carauselImg {
+  width: 960px;
+  height: 400px;
+}
+
+.carausel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Aboutを中央に配置 */
 .about {
   text-align: center;
 }
-/* yokobaoとnameを横並びにする */
+/* yokogaoとnameを横並びにする */
 .jikosyoukai {
   display: flex;
   gap: 20px
 }
 
+/* workの画像のリサイズ */
+.work {
+  width: 647px;
+  height: 490px;
+}
 /* Workを中央に配置 */
 .works {
   text-align: center;
