@@ -49,25 +49,28 @@
   gap: 50px
 }
 
-/* Worksを中央に配置 */
+/* Worksセクション全体を中央に配置 */
 .works {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
-
-
+/* worksのタイトルを中央に配置 */
+.works h1 {
+  text-align: center;
+  width: 100%;
+}
 /* workの画像のリサイズ */
 .work {
   width: 179px;
   height: 134px;
 }
-
-/* work-sakuhinをflexcontainerにして子要素を横並びにする */
+/* works-sakuhinをflexcontainerにして子要素を横並びにする */
 .works-sakuhin {
-  width: 573px;
-  height: 329px;
-}
-.sakuhin {
+  /* width: 573px;
+  height: 329px; */
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
