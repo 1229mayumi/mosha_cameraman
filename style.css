@@ -136,3 +136,9 @@ body {
   text-decoration: none;
 }
 
+/* フッターを中央に配置 */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
