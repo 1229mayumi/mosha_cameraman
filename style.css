@@ -48,6 +48,11 @@ body {
 .about {
   text-align: center;
 }
+
+/* yokogao画像の角を丸くする */
+.yokogao {
+  border-radius: 50%;
+}
 /* yokogaoとnameを横並びにする */
 .jikosyoukai {
   display: flex;
