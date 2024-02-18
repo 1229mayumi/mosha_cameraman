@@ -65,12 +65,60 @@
   width: 179px;
   height: 134px;
 }
+/* 説明文の折り返し表示 */
+.sakuhin p {
+  word-wrap: break-word;
+  width: 179px;
+  margin: 0 auto;
+}
 /* works-sakuhinをflexcontainerにして子要素を横並びにする */
 .works-sakuhin {
-  /* width: 573px;
-  height: 329px; */
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
 }
+
+
+/* モーダルの設定 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  width: 80%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+/* モーダルコンテンツの設定 */
+.modal-content {
+  position: relative;
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* モーダルで表示する画像 */
+#modalImg {
+  position: absolute;
+  width: 80px;
+  max-width: 800px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+/* 閉じるボタン */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
+}
+
