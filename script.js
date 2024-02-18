@@ -11,11 +11,11 @@ $(function() {
   
   // モーダル
   // work写真をクリックしたとき
-  $('.work').click(function() {
+  $('.work img').click(function() {
     // クリックされた写真のsrcを取得
-    let :src = $(this).attr('src');
+    const imgSrc = $(this).attr('src');
     // 取得したsrcをモーダルのimgのsrcに設定
-    $('#modalImg').attr('src', src);
+    $('#modalImg').attr('src', imgSrc);
     // モダールを表示
     $('#myModal').fadeIn();
   });
