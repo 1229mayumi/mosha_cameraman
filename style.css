@@ -1,3 +1,9 @@
+/* bodyの余白をなくす */
+body {
+  padding: 0;
+  margin: 0;
+}
+
 /* MyProfileを四角でかこむ */
 .myprofile {
   border: 1px solid black;
@@ -8,10 +14,11 @@
 /* ナビゲーションメニューを横並びにする */
 .nav {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 46px;
-  gap: 200px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 20px auto 20px auto;
+  max-width: 960px; 
 }
 
 /* nav2(about と works) を横並びにする */
@@ -77,7 +84,7 @@
   margin: 0 auto;
 }
 /* works-sakuhinをflexcontainerにして子要素を横並びにする */
-.works-sakuhin {
+.sakuhin {
   display: flex;
   justify-content: space-around;
   width: 573px;
