@@ -60,6 +60,11 @@
   text-align: center;
   width: 100%;
 }
+.sakuhin {
+  width: 179px;
+  margin: 10px;
+  text-align: center;
+}
 /* workの画像のリサイズ */
 .work {
   width: 179px;
@@ -74,8 +79,10 @@
 /* works-sakuhinをflexcontainerにして子要素を横並びにする */
 .works-sakuhin {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 573px;
+  height: 329px;
+  margin:auto;
 }
 
 
