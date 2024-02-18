@@ -11,7 +11,7 @@ $(function() {
   
   // モーダル
   // work写真をクリックしたとき
-  $('.work img').click(function() {
+  $('.work').click(function() {
     // クリックされた写真のsrcを取得
     const imgSrc = $(this).attr('src');
     // 取得したsrcをモーダルのimgのsrcに設定
