@@ -144,8 +144,9 @@ body {
 }
 
 /* フッターを中央に配置 */
-.footer {
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }

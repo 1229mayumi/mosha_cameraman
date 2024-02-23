@@ -5,8 +5,9 @@ $(function() {
     autoplay: true,
     dots: true,
     infinite: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 3000,
     arrows: false,
+    fade: true,
   });
   
   // モーダル
