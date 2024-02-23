@@ -24,5 +24,28 @@ $(function() {
   // 閉じるボタンが押されたら、モーダルを閉じる
   $('.close').click(function() {
     $('#myModal').fadeOut();
+  });
+
+  // Topに戻るボタン
+  // topというidを持つHTML要素を取得し、定数に代入する
+  const top = document.getElementById('top');
+
+  //画面がスクロールされた時にイベント処理を実行する
+  top.addEventListener('scroll', () => {
+    //画面のスクロール量をpxで取得する
+    const scrollValue = document.scrollingElement.scrollTop;
+
+    //画面のスクロール量が300px以上であれば、「Topに戻る」ボタンを表示する
+    if (scrollValue >= 300) {
+      top.style.display = 'inline';
+    }
+    //画面のスクロール量が300px未満であれば、「Topに戻る」ボタンを非表示にする
+    else {
+      top.style.display = 'none';
+    }
   })
+
+
+  })
+
 });
